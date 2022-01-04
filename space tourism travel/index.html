@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+    <script src="query.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <title>Space Travel Website</title>
+  </head>
+  <body>
+    <!--Home Section includes navigation bar and hero -->
+    <header id="home">
+      <div class="top-bar">
+        <div class="logo">
+          <img src="./assets/shared/logo.svg" alt="logo" />
+        </div>
+        <nav>
+          <div class="menu-icon open">
+            <img src="./assets/shared/icon-hamburger.svg" alt="ham-icon" />
+          </div>
+          <div class="nav-links">
+            <ul class="menu-list">
+              <div class="menu-icon close">
+                <img src="./assets/shared/icon-close.svg" alt="close-icon" />
+              </div>
+              <li>
+                <span style="font-weight: bold">00</span
+                ><a href="#home">HOME</a>
+              </li>
+              <li>
+                <span style="font-weight: bold">01</span>
+                <a href="#destinations">DESTINATION</a>
+              </li>
+              <li>
+                <span style="font-weight: bold">02</span>
+                <a href="#crew">CREW</a>
+              </li>
+              <li>
+                <span style="font-weight: bold">03</span>
+                <a href="#technology">TECHNOLOGY</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="bottom-hero">
+        <div class="sub-hero">
+          <div class="left-hero">
+            <h3>SO, YOU WANT TO TRAVEL TO</h3>
+            <h1>SPACE</h1>
+            <p>
+              Let's face it; if you want to go to space, you might as well
+              genuinely go to outer space and not hover kind of on the edge of
+              it. Well sit back, and relax because we'll give you a truly out of
+              this world experience!
+            </p>
+          </div>
+          <div class="right-hero">
+            <button class="explore-btn">EXPLORE</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Destinations Section includes destinatiosn slides 
+        (images and details about every destination)-->
+    <section id="destinations">
+      <div class="inner-destinations">
+        <div class="title">
+          <span>01</span>
+          <h2>PICK YOUR DESTINATION</h2>
+        </div>
+        <div class="slides">
+          <div class="destination-slide">
+            <div class="destination-image">
+              <img src="" alt="" />
+            </div>
+            <div class="destination-details">
+              <div class="dest-links">
+                <span
+                  onclick="showDestination(counter=1);"
+                  >MOON</span
+                >
+                <span
+                  onclick="showDestination(counter=2);"
+                  >MARS</span
+                >
+                <span
+                  onclick="showDestination(counter=3);"
+                  >EUROPA</span
+                >
+                <span
+                  onclick="showDestination(counter=4);"
+                  >TITAN</span
+                >
+              </div>
+              <div class="dest-details">
+                <h1></h1>
+                <p></p>
+              </div>
+              <div class="measurements">
+                <div class="distance">
+                  <h4>AVG. DISTANCE</h4>
+                  <br />
+                  <h3></h3>
+                </div>
+                <div class="time">
+                  <h4>Est. travel time</h4>
+                  <br />
+                  <h3></h3>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--Crew Section includes crew slides 
+      (images and details about every crew member)-->
+    <section id="crew">
+      <div class="inner-crew">
+        <div class="title">
+          <span>02</span>
+          <h2>MEET YOUR CREW</h2>
+        </div>
+        <div class="slides">
+          <div class="member-slide">
+            <div class="crew-details">
+              <div class="member-details">
+                <h2></h2>
+                <h1></h1>
+                <p></p>
+              </div>
+              <div class="indicators">
+                <span onclick="showCrewMember(counter=1)"></span>
+                <span onclick="showCrewMember(counter=2)"></span>
+                <span onclick="showCrewMember(counter=3)"></span>
+                <span onclick="showCrewMember(counter=4)"></span>
+              </div>
+            </div>
+            <div class="member-image">
+              <img src="" alt="" />
+            </div>
+          </div>
+      </div>
+    </section>
+    <!--Technology Section includes technologies slides 
+        (images and details about every technology)-->
+    <section id="technology">
+      <div class="inner-technology">
+        <div class="title">
+          <span>03</span>
+          <h2>SPACE LAUNCH 101</h2>
+        </div>
+        <div class="slides">
+          <div class="tech-slide">
+            <div class="technology-details">
+              <div class="on-off-btns">
+                <span onclick="showTechnology(counter=1)"
+                  >1</span
+                >
+                <span onclick="showTechnology(counter=2)"
+                  >2</span
+                >
+                <span onclick="showTechnology(counter=3)"
+                  >3</span
+                >
+              </div>
+              <div class="tech-details">
+                <h4>THE TERMINOLOGY…</h4>
+                <h2></h2>
+                <p></p>
+              </div>
+            </div>
+            <div class="tech-image">
+              <img src="" alt="" />
+            </div>
+          </div>
+      </div>
+    </section>
+  </body>
+</html>
